@@ -814,6 +814,17 @@
             color: var(--accent-green);
         }
 
+        .week-status.model-training {
+            background: rgba(139, 92, 246, 0.15);
+            color: #a78bfa;
+            border: 1px solid rgba(139, 92, 246, 0.3);
+        }
+
+        .timeline-week.strikethrough {
+            text-decoration: line-through;
+            opacity: 0.55;
+        }
+
         .week-status.report-ready {
             background: var(--accent-green);
             color: #000;
@@ -1027,28 +1038,6 @@
             <div class="logo">MX<span>GENIUS</span></div>
             <div style="font-size: 0.7rem; color: var(--text-secondary); letter-spacing: 1px; text-transform: uppercase; margin-top: 0.25rem;">Last Updated: May 4, 2026 · 2:47 AM EST</div>
             <div class="header-right">
-                <div class="countdown-container">
-                    <div class="countdown-label">Launch Countdown</div>
-                    <div class="countdown" id="countdown">26 WEEKS</div>
-                    <div class="countdown-detail" id="countdownDetail">
-                        <div class="countdown-unit">
-                            <div class="countdown-unit-value" id="days">000</div>
-                            <div class="countdown-unit-label">Days</div>
-                        </div>
-                        <div class="countdown-unit">
-                            <div class="countdown-unit-value" id="hours">00</div>
-                            <div class="countdown-unit-label">Hrs</div>
-                        </div>
-                        <div class="countdown-unit">
-                            <div class="countdown-unit-value" id="minutes">00</div>
-                            <div class="countdown-unit-label">Min</div>
-                        </div>
-                        <div class="countdown-unit">
-                            <div class="countdown-unit-value" id="seconds">00</div>
-                            <div class="countdown-unit-label">Sec</div>
-                        </div>
-                    </div>
-                </div>
                 <div class="velocity-badge">
                     <i class="fas fa-tachometer-alt"></i>
                     <span id="velocityText">0% Complete</span>
@@ -1057,12 +1046,10 @@
         </header>
 
 
-        <!-- Report Ready Banner -->
-        <div style="background: rgba(16, 185, 129, 0.1); border: 1px solid var(--accent-green); border-radius: 0.75rem; padding: 1rem 1.25rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem;">
+        <!-- Report Ready Banner -->        <div style="background: rgba(16, 185, 129, 0.1); border: 1px solid var(--accent-green); border-radius: 0.75rem; padding: 1rem 1.25rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem;">
             <i class="fas fa-check-circle" style="color: var(--accent-green); font-size: 1.25rem;"></i>
             <div>
-                <div style="color: var(--accent-green); font-family: 'Rajdhani', sans-serif; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; font-size: 0.85rem;">Week 7 Report Ready</div>
-                <div style="color: var(--text-secondary); font-size: 0.82rem;">Week 6 & 7 reports are available for review in the Weekly Reports section below.</div>
+                <div style="color: var(--accent-green); font-family: 'Rajdhani', sans-serif; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; font-size: 0.85rem;">Week 11 Report Ready</div>
             </div>
         </div>
 
@@ -1248,9 +1235,9 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <div class="timeline-header">
-                                <span class="timeline-week">Week 8</span>
+                                <span class="timeline-week strikethrough">Week 8</span>
                                 <span class="timeline-dates">May 4 - May 10, 2026</span>
-                                <span class="week-status pending">Pending</span>
+                                <span class="week-status model-training"><i class="fas fa-brain" style="margin-right:0.3rem;"></i>Model Training & Tuning</span>
                             </div>
                             <div class="timeline-body">
                                 <div class="timeline-row">
@@ -1266,9 +1253,9 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <div class="timeline-header">
-                                <span class="timeline-week">Week 9</span>
+                                <span class="timeline-week strikethrough">Week 9</span>
                                 <span class="timeline-dates">May 11 - May 17, 2026</span>
-                                <span class="week-status pending">Pending</span>
+                                <span class="week-status model-training"><i class="fas fa-brain" style="margin-right:0.3rem;"></i>Model Training & Tuning</span>
                             </div>
                             <div class="timeline-body">
                                 <div class="timeline-row">
@@ -1284,9 +1271,9 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <div class="timeline-header">
-                                <span class="timeline-week">Week 10</span>
+                                <span class="timeline-week strikethrough">Week 10</span>
                                 <span class="timeline-dates">May 18 - May 24, 2026</span>
-                                <span class="week-status pending">Pending</span>
+                                <span class="week-status model-training"><i class="fas fa-brain" style="margin-right:0.3rem;"></i>Model Training & Tuning</span>
                             </div>
                             <div class="timeline-body">
                                 <div class="timeline-row">
@@ -1304,12 +1291,15 @@
                             <div class="timeline-header">
                                 <span class="timeline-week">Week 11</span>
                                 <span class="timeline-dates">May 25 - May 31, 2026</span>
-                                <span class="week-status pending">Pending</span>
+                                <a class="week-status report-ready" onclick="viewReport(11)" title="View Week 11 Report">
+                                    <i class="fas fa-file-alt"></i> Report Ready
+                                </a>
+                                <span class="task-new-badge" style="font-size: 0.6rem;">NEW</span>
                             </div>
                             <div class="timeline-body">
                                 <div class="timeline-row">
                                     <span class="timeline-label">Summary:</span>
-                                    <span class="timeline-text">[Weekly summary will appear here]</span>
+                                    <span class="timeline-text">v3.0.3 — FAA directives, MxGenius AI chat, Globe filters, RAG integration, Kokoro &amp; model tuning</span>
                                 </div>
                             </div>
                         </div>
@@ -1641,7 +1631,7 @@
             {
                 name: "Phase 1: Data Pipeline & Ingestion (Months 1–2)",
                 hasUpdates: true,
-                updateColor: 'amber',
+                updateColor: 'green',
                 tasks: [
                     {
                         id: 1,
@@ -1649,9 +1639,11 @@
                         description: "Audit file types/volume and convert PDF, DOCX, scans into structured text.",
                         subtasks: [
                             "Data audit (file types, structure, volume)",
-                            "Conversion pipeline (PDF, DOCX, scans → structured text)"
+                            "Conversion pipeline (PDF, DOCX, scans → structured text)",
+                            "Coverage & router logic in API"
                         ],
-                        completed: false,
+                        completed: true,
+                        completionNote: "Compressed 100GB+ of data into a flattened JSON structure. Built a custom router to surface it on the frontend. Conversion pipeline has completed its job — not currently running, but remains in the background for easy future updates when new data arrives.",
                         feedback: []
                     },
                     {
@@ -1662,18 +1654,20 @@
                             "Normalization (cleaning, formatting, tagging)",
                             "Chunking strategy (semantic segmentation)"
                         ],
-                        completed: false,
+                        completed: true,
+                        completionNote: "Covered under the conversion pipeline. Available for future use when additional data is introduced.",
                         feedback: []
                     },
                     {
                         id: 3,
                         title: "Storage & Embedding",
-                        description: "Set up Azure storage, vector DB, and embedding pipeline.",
+                        description: "Set up storage, vector DB, and embedding pipeline.",
                         subtasks: [
                             "Embedding pipeline (vectorization)",
-                            "Storage architecture (Azure + vector DB)"
+                            "Storage architecture (local DB + custom embedding pipeline)"
                         ],
-                        completed: false,
+                        completed: true,
+                        completionNote: "Tentatively complete for current scale. Azure was unnecessary — replaced with a local database and a custom-built embedding pipeline. Revisit if scale requirements increase significantly in the future.",
                         feedback: []
                     },
                     {
@@ -1685,25 +1679,27 @@
                             "Update scheduler and change detection"
                         ],
                         completed: true,
-                        completionNote: "System constantly running in the background to complete the data ingestion.",
+                        completionNote: "Covered under the pipeline. Available for easy future updates — not currently running as it has completed its initial job.",
                         feedback: []
                     }
                 ]
             },
             {
                 name: "Phase 2: Model Training + Evaluation (Month 3)",
-                hasUpdates: false,
+                hasUpdates: true,
+                updateColor: 'amber',
                 tasks: [
                     {
                         id: 5,
                         title: "Base Model & Training Setup",
-                        description: "Select base model (fine-tune vs RAG-heavy hybrid) and setup pipeline.",
+                        description: "Select base model and setup training pipeline.",
                         subtasks: [
                             "Base model selection",
                             "Training pipeline setup",
-                            "Fine-tuning (if applicable)"
+                            "Fine-tuning algorithm (to be decided — developing as we go)"
                         ],
-                        completed: false,
+                        completed: true,
+                        completionNote: "Base model confirmed: Qwen. Training pipeline and setup established as of end of Week 11. Fine-tuning algorithm is to be decided and will be developed as we progress.",
                         feedback: []
                     },
                     {
