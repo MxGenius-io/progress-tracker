@@ -19,7 +19,7 @@
 ![One of the things I'm hardening now is profiles, storage security, recall, just to be sure that it works at an enterprise level out the gate.](image-3.png)
 *One of the things I'm hardening now is profiles, storage security, recall, just to be sure that it works at an enterprise level out the gate.*
 
-## https://chatgpt.com/g/g-6a429ffc124081918858168d19260045-mxgenius
+## [https://chatgpt.com/g/g-6a429ffc124081918858168d19260045-mxgenius](https://chatgpt.com/g/g-6a429ffc124081918858168d19260045-mxgenius)
 
 ![Having an OpenAI business account and API also makes you eligible to create proper GPTs on their platform. So we have an MX Genius GPT under the Advanced AOG company that can connect to the API that I'm building on their platform, which gives you the closed loop.](image-4.png)
 *Having an OpenAI business account and API also makes you eligible to create proper GPTs on their platform. So we have an MX Genius GPT under the Advanced AOG company that can connect to the API that I'm building on their platform, which gives you the closed loop.*
