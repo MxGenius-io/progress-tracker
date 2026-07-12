@@ -54,6 +54,10 @@ Big push on July 7 — compact stat-bar redesign, fixed company/contact API endp
 
 Then on the 8th, cleaned up by removing the stat bar entirely after it was replaced by cleaner inline displays, and cleared out all the dead stat code.
 
+## Platform Walkthrough
+
+🎬 **Video:** walkthrough.mp4
+
 ---
 
 ## Bottom Line
