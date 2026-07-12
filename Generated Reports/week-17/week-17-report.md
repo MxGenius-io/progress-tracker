@@ -62,9 +62,10 @@ Then on the 8th, cleaned up by removing the stat bar entirely after it was repla
 
 ## Bottom Line
 
-The platform went through a visual and functional transformation this week. The dashboard now feels like enterprise software — fast loads, offline cache, real filters, bulk export. The 3D viewer looks professional. The chat actually works end-to-end. And the landing page is ready to show to anyone.
+The walkthrough says most of it. Two things to flag:
 
-Next up: continued model evaluation work and getting the MxGenius.io domain live.
+1. With the text and logo finalized, we can close up the landing page.
+2. With the layout and structured model output in place, we'll be ready for field testing.
 
 ---
 
